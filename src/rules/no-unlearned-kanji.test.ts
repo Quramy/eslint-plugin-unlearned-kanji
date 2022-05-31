@@ -20,17 +20,17 @@ tester.run("no-jsx-button", rule, {
     {
       filename: "invalid.tsx",
       code: `() => <>愛</>`,
-      errors: [{ message: /Found unlearned kanji: "愛"/ }],
+      errors: [{ message: /Found kanji "愛"/ }],
     },
     {
       filename: "invalid.tsx",
       code: `() => <>愛と勇気だけがともだち</>`,
-      errors: [{ message: /Found unlearned kanji: "愛"/ }, { message: /Found unlearned kanji: "勇"/ }],
+      errors: [{ message: /Found kanji "愛"/ }, { message: /Found kanji "勇"/ }],
     },
     {
       filename: "invalid.tsx",
       code: `() => <>愛と<strong>勇気</strong>だけがともだち</>`,
-      errors: [{ message: /Found unlearned kanji: "愛"/ }, { message: /Found unlearned kanji: "勇"/ }],
+      errors: [{ message: /Found kanji "愛"/ }, { message: /Found kanji "勇"/ }],
     },
   ],
 });

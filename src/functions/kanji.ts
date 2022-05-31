@@ -34,12 +34,12 @@ export function containsUnlearnedKanji(text: string, grade: number) {
 export function indexOfUnlearnedKanji(text: string, grade: number) {
   const result = [];
   for (let i = grade - 1; i < GRADE_REGEXP_LIST.length; i++) {
-    const matches = text.matchAll(GRADE_REGEXP_LIST[i])
+    const matches = text.matchAll(GRADE_REGEXP_LIST[i]);
     for (const match of matches) {
       result.push({
         grade,
         index: match.index!,
-      })
+      });
     }
   }
   return result;

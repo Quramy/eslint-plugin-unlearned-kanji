@@ -1,4 +1,4 @@
-import noUnlearnedKanji from "./rules/no-unlearned-kanji"
+import noUnlearnedKanji from "./rules/no-unlearned-kanji";
 
 export = {
   rules: {

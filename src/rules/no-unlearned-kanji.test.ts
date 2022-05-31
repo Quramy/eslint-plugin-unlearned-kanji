@@ -1,6 +1,6 @@
 import { RuleTester } from "eslint";
 
-import rule  from "./no-unlearned-kanji";
+import rule from "./no-unlearned-kanji";
 
 const tester = new RuleTester({
   parser: require.resolve("@typescript-eslint/parser"),
@@ -34,4 +34,3 @@ tester.run("no-jsx-button", rule, {
     },
   ],
 });
-

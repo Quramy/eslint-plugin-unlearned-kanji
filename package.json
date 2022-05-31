@@ -4,6 +4,7 @@
   "description": "A eslint plugin to ban unlearned kanji in JSX",
   "main": "lib/index.js",
   "scripts": {
+    "prepare": "husky install",
     "clean": "rimraf lib",
     "build": "tsc",
     "prettier": "prettier \"*.{js,json,yml,yaml,md}\" \"src/**/*\"",
